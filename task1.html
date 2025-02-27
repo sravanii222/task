@@ -1,0 +1,56 @@
+
+    1.    temp = prompt("Enter temp in degree celsius:");
+        if (!(isNaN(temp))) {
+            if (temp > 40) {
+                console.log("Extreme Hot");
+            }
+            else if (temp >= 20 && temp <= 40) {
+                console.log("Moderate");
+            }
+            else {
+                console.log("Cold")
+            }
+        }
+        else {
+            console.log("Enter digits only")
+        }
+
+ 
+
+
+
+2. let totalAmount = +prompt("Enter total amount:");
+if (!(isNaN(totalAmount))) {
+    if (totalAmount >= 500) {
+        totalAmount -= 0.2 * totalAmount
+    }
+    else if (totalAmount > 200 && totalAmount < 500) {
+        totalAmount -= 0.1 * totalAmount;
+    }
+    else {
+        totalAmount = totalAmount;
+
+    }
+    console.log("TotalAmount after discount:",totalAmount);
+}
+else {
+    console.log("Enter value >0");
+}
+3.  let marks = +prompt("Enter Marks:");
+switch (true) {
+    case marks >= 90:
+        grade = "A+";
+        break;
+    case marks >= 80:
+        grade = "A";
+        break;
+    case marks >= 70:
+        grade = "B";
+        break;
+    case marks < 70:
+        grade = "C";
+        break;
+    default:
+        grade = "Enter correct value"
+}
+console.log(grade);
